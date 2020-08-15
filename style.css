@@ -31,7 +31,7 @@ a, a:hover {
 }
 
 #homeImage {
-  background-image: linear-gradient(to bottom, var(--secondaryColor), rgba(var(--secondaryRed), var(--secondaryGreen), var(--secondaryBlue), var(--imageOpacity)), rgba(var(--primaryRed), var(--primaryGreen), var(--primaryBlue), var(--imageOpacity)), var(--primaryColor)), url("home_image-min.jpg");
+  background-image: linear-gradient(to bottom, var(--secondaryColor), rgba(var(--secondaryRed), var(--secondaryGreen), var(--secondaryBlue), var(--imageOpacity)), rgba(var(--primaryRed), var(--primaryGreen), var(--primaryBlue), var(--imageOpacity)), var(--primaryColor)), url("https://bobertoyin.github.io/home_image.jpg");
   background-size: cover;
   width: 100%;
   height: 600px;
