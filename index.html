@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Robert Yin</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="icofont.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="homeImage">
+      <i id="switch" class="icofont-light-bulb" onclick="flipTheme()"></i>
+      <div>
+        <img id="headshot" src="headshot.JPG" alt="It's me!">
+        <p>
+          Hi, my name is<br>
+          <i id="name"><b style="font-size:2.25em;font-weight:700">Robert Yin</b></i><br>
+          and I'm currently studying <i><b>computer science</b></i> with a concentration in <i><b>artificial intelligence</b></i> at <i><b>Northeastern University</b></i> in Boston, Massachusetts. When I'm not learning more about the field of computer science, I enjoy being a hobbyist photographer, amateur cook, and poser skateboarder.
+        </p>
+      </div>
+    </div>
+    <div>
+      <h1>Projects</h1>
+      <hr>
+      <div class="project">
+        <h2>ExCELlence Animator</h2>
+        <p class="projectLang">
+          Languages used: Java (Java Swing GUI)
+        </p>
+        <p class="projectLang">
+          Environments used: IntelliJ IDEA
+        </p>
+        <p class="projectDesc">
+          This project served as the final assignment for Northeastern University's Object-Oriented Design class for the Spring 2020 semester. I worked with a partner to help develop the underlying animation model, controller, and view according to MVC design principles, and the program would allow a user to read an animation from a text file and view it as either a text or view format or edit and save the animation with a visual editor view. This is the largest project I've worked on to date, highlighting the experience gained in working with large-scale software.
+        </p>
+        <p class="projectLink">
+          There is no public repository due to the nature of its origin, but feel free to ask me more about it!
+        </p>
+      </div>
+      <div class="project">
+          <h2>Predicting the Genre of Spotify Songs with Machine Learning</h2>
+          <p class="projectLang">
+            Languages used: Python (scikit-learn, pandas, seaborn, Matplotlib)
+          </p>
+          <p class="projectLang">
+            Environments used: Jupyter Notebook
+          </p>
+          <p class="projectDesc">
+            This project served as the final assignment for Northeastern University's Foundations of Data Science class for the Summer 2020 semester. I worked with a partner to train popular machine learning algorithms to predict the genre of a song based on select audio features of the track. The audio features, amongst other data, were pulled using Spotify's API and various python libraries, and the project was presented to both the instructors and peers of the class. The project was also my first experience within the field of artificial intelligence.
+          </p>
+          <p class="projectLink">
+            There is no public repository for the notebook due to the nature of its origin, but click <a href="https://github.com/BobertoYin/spotify_dataset" target="_blank">here</a> to visit the public repository for the dataset and some data visualizations!
+          </p>
+      </div>
+      <div class="project">
+        <h2>An Odd Algorithm for Finding the Total Inside Space of a Triangle</h2>
+        <p class="projectLang">
+          Languages used: JavaScript, CSS, HTML
+        </p>
+        <p class="projectLang">
+          Environments used: Atom IDE
+        </p>
+        <p class="projectDesc">
+          This project was the brainchild of the boredom that overcame me in my high school's AP Calculus class. Note: I have not done any research on how developers <i>actually</i> calculate the area of triangles effeciently, meaning that I cannot be thrown onto your dev team for your custom render engine.
+        </p>
+        <p class="projectLink">
+          Click <a href="https://github.com/BobertoYin/oaftist" target="_blank">here</a> to visit the public repository!
+        </p>
+      </div>
+      <div class="project">
+        <h2>Meme Mugs Inventory Website</h2>
+        <p class="projectLang">
+          Languages used: PHP, MySQL, HTML, CSS, JavaScript
+        </p>
+        <p class="projectLang">
+          Environments used: Cloud9 IDE, phpMyAdmin
+        </p>
+        <p class="projectDesc">
+          This project served as the semester-long assignment for Madison Academic Magnet High School's Database Management class for the Fall 2018 semester. I worked with two partners as a full-stack developer to create a connected front-end and back-end system for a fictional retailer's product inventory, while also gaining first-time experience in screencasting a product with the goal of informing a client about how the end product works. The project also served as my first experience with back-end development.
+        </p>
+        <p class="projectLink">
+          Click <a href="https://github.com/BobertoYin/meme-mugs" target="_blank">here</a> to visit the public repository!
+        </p>
+      </div>
+      <div class="project">
+        <h2>Madison Academic Band Website</h2>
+        <p class="projectLang">
+          Languages used: HTML, CSS, JavaScript, PHP
+        </p>
+        <p class="projectLang">
+          Environments used: Treehouse Workspaces
+        </p>
+        <p class="projectDesc">
+          This project served as the semester-long assignment for Madison Academic Magnet High School's Intro to Web Design class for the Spring 2017 semester. I worked with a partner on a simple front-end static website, which served as a starting point for my interests in computer science. The project also earned me the opportunity to visit tech companies in Silicon Valley as a high schooler through the DevCatalyst program.
+        </p>
+        <p class="projectLink">
+          Click <a href="https://github.com/BobertoYin/Madison-Band" target="_blank">here</a> to visit the public repository!
+        </p>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <a class="footerIcon" href="mailto:yin.rob@northeastern.edu" target="_blank"><i class="icofont-envelope-open"></i>Email</a>
+    <a class="footerIcon" href="resume2.pdf" target="_blank"><i class=icofont-page></i>Resume</a>
+    <a class="footerIcon" href="https://linkedin.com/in/boberto" target="_blank"><i class="icofont-linkedin"></i>LinkedIn</a>
+    <a class="footerIcon" href="https://github.com/BobertoYin" target="_blank"><i class="icofont-code"></i>Github</a>
+  </footer>
+  <script type="text/javascript">
+    function flipTheme() {
+      if (document.documentElement.style.getPropertyValue("--currTheme") == 0) {
+        document.documentElement.style.setProperty("--currTheme", 1);
+        document.documentElement.style.setProperty("--primaryColor", "white");
+        document.documentElement.style.setProperty("--primaryRed", 255);
+        document.documentElement.style.setProperty("--primaryGreen", 255);
+        document.documentElement.style.setProperty("--primaryBlue", 255);
+        document.documentElement.style.setProperty("--tertiaryColor", "#521945");
+      } else {
+        document.documentElement.style.setProperty("--currTheme", 0);
+        document.documentElement.style.setProperty("--primaryColor", "#521945");
+        document.documentElement.style.setProperty("--primaryRed", 82);
+        document.documentElement.style.setProperty("--primaryGreen", 25);
+        document.documentElement.style.setProperty("--primaryBlue", 69);
+        document.documentElement.style.setProperty("--secondaryColor", "#FFAD69");
+        document.documentElement.style.setProperty("--tertiaryColor", "white");
+      }
+    }
+  </script>
+</html>

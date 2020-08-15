@@ -1,0 +1,154 @@
+/*
+COLOR THEME VALUES
+*/
+:root {
+  --currTheme: 0;
+  --primaryColor: #521945;
+  --primaryRed: 82;
+  --primaryGreen: 25;
+  --primaryBlue: 69;
+  --secondaryColor: #FFAD69;
+  --secondaryRed: 255;
+  --secondaryGreen: 173;
+  --secondaryBlue: 105;
+  --tertiaryColor: white;
+  --primaryFont: "IBM Plex Sans";
+  --imageOpacity: 0.55;
+  --switchIconSize: 70px;
+  --footerIconSize: 35px;
+  --linkTransition: linear 0.075s;
+}
+
+body {
+  background-color: var(--primaryColor);
+  font-family: var(--primaryFont);
+  text-align: center;
+  color: var(--tertiaryColor);
+}
+
+a, a:hover {
+  transition: var(--linkTransition);
+}
+
+#homeImage {
+  background-image: linear-gradient(to bottom, var(--secondaryColor), rgba(var(--secondaryRed), var(--secondaryGreen), var(--secondaryBlue), var(--imageOpacity)), rgba(var(--primaryRed), var(--primaryGreen), var(--primaryBlue), var(--imageOpacity)), var(--primaryColor)), url("home_image.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+}
+
+#homeImage div {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  justify-content: center;
+  padding-top: 8%;
+}
+
+#homeImage p {
+  font-size: 1.4em;
+  line-height: 1.5;
+  margin: 0 0 0 0.5em;
+  padding: 0 1em;
+  text-align: left;
+  max-width: 1000px;
+  color: var(--tertiaryColor);
+}
+
+#homeImage b {
+  font-size: 1.075em;
+  margin-right: 0.1em;
+}
+
+#headshot {
+  height: 300px;
+  object-fit: contain;
+  border-radius: 5px;
+  border: 5px solid var(--tertiaryColor);
+  margin-right: 0.5em;
+}
+
+#switch {
+  position: relative;
+  top: 15px;
+}
+
+#switch, #switch:hover {
+  transition: var(--linkTransition);
+  font-size: var(--switchIconSize);
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0.25em;
+}
+
+hr {
+  width: 57.5%;
+}
+
+
+.project {
+  width: 55%;
+  margin: auto;
+  text-align: left;
+  padding: 0.25em 2em;
+}
+
+.project h2 {
+  margin: 1em 0 0 0;
+  font-size: 1.85em;
+}
+
+.projectLang, .projectDesc, .projectLink {
+  margin-top: 0.65em;
+  margin-left: 1em;
+  line-height: 1.75;
+  font-size: 1.15em;
+}
+
+.projectLang {
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--secondaryColor);
+}
+
+.projectDesc {
+  margin-bottom: 0.5em;
+}
+
+.projectLink a {
+  text-decoration: underline;
+  color: var(--tertiaryColor);
+  font-style: italic;
+  margin-right: 0.1em;
+}
+
+.projectLink a:hover {
+  color: var(--secondaryColor);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.25em;
+}
+
+.footerIcon {
+  margin: 2.5em 3em;
+  text-decoration: none;
+  color: var(--tertiaryColor);
+  font-weight: bold;
+}
+
+.footerIcon i {
+  font-size: var(--footerIconSize);
+  margin-right: 0.25em;
+}
+
+.footerIcon:hover {
+  color: var(--secondaryColor);
+  cursor: pointer;
+}
