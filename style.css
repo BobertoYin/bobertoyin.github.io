@@ -3,14 +3,14 @@ COLOR THEME VALUES
 */
 :root {
   --currTheme: 0;
-  --primaryColor: #521945;
-  --primaryRed: 82;
-  --primaryGreen: 25;
-  --primaryBlue: 69;
-  --secondaryColor: #FFAD69;
-  --secondaryRed: 255;
-  --secondaryGreen: 173;
-  --secondaryBlue: 105;
+  --primaryColor: #355070;
+  --primaryRed: 53;
+  --primaryGreen: 80;
+  --primaryBlue: 112;
+  --secondaryColor: #E56B6F;
+  --secondaryRed: 229;
+  --secondaryGreen: 107;
+  --secondaryBlue: 111;
   --tertiaryColor: white;
   --primaryFont: "IBM Plex Sans";
   --imageOpacity: 0.55;
@@ -71,12 +71,17 @@ a, a:hover {
 #switch {
   position: relative;
   top: 15px;
+  display: inline-block;
 }
 
 #switch, #switch:hover {
   transition: var(--linkTransition);
   font-size: var(--switchIconSize);
   cursor: pointer;
+}
+
+#switch:hover {
+  transform: scale(1.1);
 }
 
 h1 {
