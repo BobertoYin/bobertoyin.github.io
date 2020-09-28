@@ -80,10 +80,6 @@ a, a:hover {
   cursor: pointer;
 }
 
-#switch:hover {
-  transform: scale(1.1);
-}
-
 h1 {
   font-size: 3em;
   margin: 0.25em;
